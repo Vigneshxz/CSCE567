@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.hero {
+    background: linear-gradient(to bottom, #000428, #004e92);
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 0.5em 1em;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 1em;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.visualization-section {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.sub-section {
+    margin: 20px 0;
+}
+
+.chart-container {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.axis-label {
+    font-size: 14px;
+    font-weight: bold;
+    fill: #555;
+}
+
+.tooltip {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 12px;
+    pointer-events: none;
+    border-radius: 5px;
+}
+
+.info-box {
+    margin-top: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+
+/* Leaderboard Styling */
+#all-time-leaderboard {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#all-time-leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#all-time-leaderboard th, #all-time-leaderboard td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#all-time-leaderboard th {
+    background-color: #004e92;
+    color: white;
+    cursor: pointer;
+}
+
+#all-time-leaderboard tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#all-time-leaderboard tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Player Image Section */
+.player-image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.player-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #004e92;
+    margin-top: 10px;
+}
+
+#current-leaderboard {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .tooltip {
+    position: absolute;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+
+  /* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #333;
+    color: white;
+}

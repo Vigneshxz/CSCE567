@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Madrid: A Football Legacy</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <h1>Real Madrid: A Football Legacy</h1>
+    <p>Explore the rich history and achievements of one of the world's greatest football clubs.</p>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#team-performance">Team Performance</a></li>
+      <li><a href="#top-players">Top Players</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Team Performance Section -->
+    <section id="team-performance" class="visualization-section">
+      <h2>Team Performance Over Time</h2>
+      <p>Track Real Madrid's success in La Liga and Champions League over the years.</p>
+      <h3>Hover on the graph points to see details</h3>
+      
+      <!-- Domestic League Section -->
+      <div id="domestic-league-chart" class="sub-section">
+        <h3>Domestic League</h3>
+        <div class="chart-container"></div>
+        <div id="info-box" class="info-box"></div>
+      </div>
+
+      <!-- International Competitions Section -->
+      <div id="international-competitions-chart" class="sub-section">
+        <h3>International Competitions</h3>
+        <div class="chart-container"></div>
+        <div id="info-box-international" class="info-box"></div>
+      </div>
+    </section>
+
+    <!-- Top Players Section -->
+    <section id="top-players" class="visualization-section">
+      <h2>Top Players</h2>
+      <p>Discover the legendary players who shaped Real Madrid's history and current stars leading the charge.</p>
+
+      <!-- All-Time Top Players Section -->
+      <div id="all-time-players" class="sub-section">
+        <h3>Real Madrid All-Time Top Scorers</h3>
+        <h3>Click on a player's name to view their image.</h3>
+        <div id="all-time-leaderboard">
+          <table>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Appearances</th>
+                <th>Goals</th>
+                <th>Goals Per Match</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <!-- Player Image Display Section -->
+        <div id="player-image" class="player-image-container">
+        </div>
+      </div>
+
+      <!-- 2023-2024 Top Players Section -->
+      <div id="current-players" class="sub-section">
+        <h3>2023-2024 Top Scorers Chart</h3>
+        <div id="current-leaderboard">
+          <h4>Hover on a slice to see details</h4>
+          <!-- The pie chart will render here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Real Madrid Visualization Project</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
